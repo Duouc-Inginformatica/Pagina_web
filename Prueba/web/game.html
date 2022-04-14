@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <link rel='stylesheet' href='css/dia.css' class="theme">
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static "/css/main.css" %}'>
+    <link rel='stylesheet' href='{% static "/css/dia.css" %}' class="theme">
     <title>TecnoGame CONSOLE</title>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
@@ -19,7 +20,7 @@
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
-            <img id="iconav" class="logo" src="images/mando.png">
+            <img id="iconav" class="logo" src="{% static "images/mando.png" %}">
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span> <span class="bar"></span>
                 <span class="bar"></span>
@@ -46,6 +47,15 @@
 					<span><i class="fas fa-sun"></i></span>
 					<span><i class="fas fa-moon"></i></span>
 				</button>
+                <img onmouseover="showCart(this)" class="cart" src="{% static "/images/cart.png" %}" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                </div>
+                <h2>Total: <strong class="price-total">0</strong> $</h2>
             </ul>
         </div>
     </nav>
@@ -60,12 +70,104 @@
                 <p>Consolas de ultima generacion al mejor precio </p>
             </div>
             <div class="main__img--container">
-                <img id="main__img" src="images/palanca-de-mando.png" />
+                <img id="main__img" src="{% static "/images/palanca-de-mando.png" %}" />
             </div>
         </div>
     </div>
 
     <!-- Bajada de pagina -->
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title">Tempest Cataclysm Combo 3 En 1 Gaming Teclado</p>
+                <a href="" data-id="1" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title"> Newskill Suiko Ivory Teclado Mecánico Gaming Full RGB</p>
+                <a href="" class="btn-add-cart" data-id="2">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title"> Aukey KM-G16 Teclado Mecánico Gaming Retroiluminado</p>
+                <a href="" data-id="3" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title"> Razer Huntsman Elite Teclado Mecánico Gaming RGB</p>
+                <a href="" data-id="4" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title"> Trust GXT 856 Torac Teclado Metálico Gaming RGB</p>
+                <a href="" data-id="5" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title"> MSI Vigor GK30 Teclado Gaming RGB</p>
+                <a href="" data-id="6" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title"> Genesis Thor 300 RGB Teclado Mecánico Gaming RGB Switch Rojo</p>
+                <a href="" data-id="7" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title"> Mars Gaming MKXTKL Teclado Mecánico Gaming RGB</p>
+                <a href="" data-id="8" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title"> Trust GXT 881 Odyss Teclado Gaming Semi-Mecánico RGB</p>
+                <a href="" data-id="9" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title"> Krom Krusher Teclado Gaming Híbrido RGB + Ratón</p>
+                <a href="" data-id="10" class="btn-add-cart">Comprar</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="{% static "/images/products/keyboard-1.jpg" %}" alt="">
+                    <p><span>49.990</span>$</p>
+                </div>
+                <p class="title"> Corsair K55 RGB PRO XT Teclado Gaming Retroiluminado Negro</p>
+                <a href="" data-id="11" class="btn-add-cart">Comprar</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Pie de pagina -->
     <div class="footer__container">
@@ -99,9 +201,10 @@
         </div>
 </body>
 
-<script src="js/app.js"></script>
-<script src="js/redict.js"></script>
-<script src="js/dark.js"></script>
+<script src="{% static "js/dark.js" %}"></script>
+<script src="{% static "js/redict.js" %}"></script>
+<script src="{% static "js/app.js" %}"></script>
+<script src="{% static "js/carrito.js" %}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </html>
