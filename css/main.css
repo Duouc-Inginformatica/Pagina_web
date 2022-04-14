@@ -54,7 +54,6 @@
 }
 
 .navbar {
-    background: rgb(255, 255, 255);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -63,10 +62,6 @@
     position: sticky;
     top: 0;
     z-index: 999;
-}
-
-.navbar_dark {
-    background: #111111;
 }
 
 .navbar__container {
@@ -165,7 +160,6 @@
 }
 
 .navbar__links {
-    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,10 +306,6 @@
 
 /* Main Content CSS */
 
-.main {
-    background-color: #fff;
-}
-
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -455,7 +445,6 @@
 /* Footer CSS */
 
 .footer__container {
-    background-color: #ffffff;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -464,7 +453,6 @@
 }
 
 #footer__logo {
-    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -497,18 +485,12 @@
     margin-bottom: 16px;
 }
 
-.footer__link--items>h2 {
-    color: rgb(0, 0, 0);
-}
-
 .footer__link--items a {
-    color: rgb(0, 0, 0);
     text-decoration: none;
     margin-bottom: 0.5rem;
 }
 
 .footer__link--items a:hover {
-    color: #000000;
     transition: 0.3s ease-out;
 }
 
@@ -516,7 +498,6 @@
 /* Social Icons */
 
 .social__icon--link {
-    color: rgb(0, 0, 0);
     font-size: 24px;
 }
 
@@ -542,7 +523,6 @@
 }
 
 .social__logo {
-    color: rgb(0, 0, 0);
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -551,10 +531,6 @@
     display: flex;
     align-items: center;
     margin-bottom: 16px;
-}
-
-.website__rights {
-    color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 820px) {
@@ -634,10 +610,8 @@
 
 .grid_1 .card .botones .boton {
     padding: 15px;
-    color: #fff;
     width: 100%;
     display: block;
-    background: #111111;
     text-align: center;
     border-radius: 5px;
     -webkit-transition: .3s ease all;
@@ -650,12 +624,4 @@
 
 .grid_1 .card .botones .boton.primario:hover {
     background: #2b007a;
-}
-
-.grid_1 .card .botones .boton.secundario {
-    background: #C8C8C8;
-}
-
-.grid_1 .card .botones .boton.secundario:hover {
-    background: #ACABAB;
 }
