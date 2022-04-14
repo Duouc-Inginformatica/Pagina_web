@@ -25,11 +25,12 @@ btnSwitch.addEventListener('click', () => {
         $("nav.navbar").removeClass("dark");
         $("div.main").removeClass("dark");
         $("div.main__container").removeClass("dark");
+        $("div.footer__container").removeClass("dark");
         $("div.social_logo").removeClass("dark");
         $("a.social__icon--link").removeClass("dark");
         $("footer__logo").removeClass("dark");
-        $("p.navbar__links").removeClass("dark");
-        $("a.website__rights").removeClass("dark");
+        $("a.navbar__links").removeClass("dark");
+        $("p.website__rights").removeClass("dark");
         $("#switch").removeClass("active");
         localStorage.setItem("dark-mode", "false");
     }
