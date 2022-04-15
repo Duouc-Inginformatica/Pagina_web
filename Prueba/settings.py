@@ -29,8 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    'C:/Users/sebas/Documents/Prueba/Prueba/web/static',
+    BASE_DIR / "static", 'C:/Users/sebas/Documents/Prueba/Prueba/web/static/',
 ]
 
 

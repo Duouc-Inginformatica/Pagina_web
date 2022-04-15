@@ -19,7 +19,8 @@ from Prueba.vista import index, contacto, game, portatiles, service, session
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index),
+    path('', index),
+    path('home/', index),
     path('contacto/', contacto),
     path('game/', game),
     path('portatiles/', portatiles),
