@@ -26,7 +26,7 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="" class="navbar__links" id="home">Inicio</a>
+                    <a href="" class="navbar__links" id="home" onclick="modooscuro();">Inicio</a>
                 </li>
                 <li class="navbar__item">
                     <a href="index/game/" class="navbar__links">Juegos</a>
@@ -95,11 +95,12 @@
             </section>
         </div>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="{% static "js/luz.js" %}"></script>
         <script src="{% static "js/dark.js" %}"></script>
         <script src="{% static "js/redict.js" %}"></script>
         <script src="{% static "js/app.js" %}"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </body>
 
 </html>
