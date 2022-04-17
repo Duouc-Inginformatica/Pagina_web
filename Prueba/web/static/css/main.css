@@ -625,3 +625,7 @@
 .grid_1 .card .botones .boton.primario:hover {
     background: #2b007a;
 }
+
+#recaptcha>div {
+    margin: 0 auto .5em;
+}
