@@ -1,0 +1,100 @@
+.navbar {
+    background: rgb(255, 255, 255);
+}
+
+.navbar.dark {
+    background: rgb(24, 23, 23);
+}
+
+.navbar .main {
+    background-color: #fff;
+}
+
+.navbar__links {
+    color: rgb(0, 0, 0);
+}
+
+.navbar__links.dark {
+    color: rgb(255, 255, 255);
+}
+
+.main.dark {
+    background-color: rgb(24, 23, 23);
+}
+
+.footer__container {
+    background-color: #ffffff;
+}
+
+.main__container {
+    background-color: #ffffff;
+}
+
+.main__container.dark {
+    background-color: rgb(24, 23, 23);
+}
+
+.footer__container.dark {
+    background-color: rgb(24, 23, 23);
+}
+
+#footer__logo {
+    color: rgb(0, 0, 0);
+}
+
+#footer__logo.dark {
+    color: rgb(253, 253, 253);
+}
+
+.footer__link--items>h2 {
+    color: rgb(0, 0, 0);
+}
+
+.footer__link--items a {
+    color: rgb(0, 0, 0);
+}
+
+.footer__link--items a:hover {
+    color: #000000;
+}
+
+.social__icon--link {
+    color: rgb(0, 0, 0);
+}
+
+.social__icon--link.dark {
+    color: rgb(255, 255, 255);
+}
+
+.social__logo.dark {
+    color: rgb(255, 255, 255);
+}
+
+.social__logo {
+    color: rgb(0, 0, 0);
+}
+
+.website__rights {
+    color: rgb(0, 0, 0);
+}
+
+.website__rights.dark {
+    color: rgb(255, 255, 255);
+}
+
+.grid_1 .card .botones .boton {
+    color: #fff;
+    background: #111111;
+}
+
+.grid_1 .card .botones .boton.secundario {
+    background: #C8C8C8;
+}
+
+.grid_1 .card .botones .boton.secundario:hover {
+    background: #ACABAB;
+}
+
+.container.dark {
+    background-color: #000000;
+}
