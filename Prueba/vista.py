@@ -16,4 +16,4 @@ def service(request):
     return render(request, 'service.html')
 
 def session(request):
-    return render(request, 'session.html')
+    return render(request, 'sesion.html')

@@ -17,6 +17,7 @@ btnSwitch.addEventListener('click', () => {
         $("div.social_logo").addClass("dark");
         $("a.social__icon--link").addClass("dark");
         $("footer__logo").addClass("dark");
+        modooscuro()
         $("a.navbar__links").addClass("dark");
         $("p.website__rights").addClass("dark");
         $("section.container").addClass("dark");

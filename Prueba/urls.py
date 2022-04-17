@@ -19,11 +19,11 @@ from Prueba.vista import index, contacto, game, portatiles, service, session
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('index/', index),
-    path('index/contacto/', contacto),
-    path('index/game/', game),
-    path('index/portatiles/', portatiles),
-    path ('index/service/', service),
-    path('index/session/', session),
+    path('', index, name='home'),
+    path('home', index, name='home'),
+    path('contacto', contacto, name='contacto'),
+    path('game', game, name='game'),
+    path('portatiles', portatiles , name='portatiles'),
+    path ('service', service , name='service'),
+    path('session', session , name='session'),
 ]
