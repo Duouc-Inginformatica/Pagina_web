@@ -10,8 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 from pathlib import Path
-#from django.conf import settings
-#from django.conf.urls.static import static
 #from types import _StaticFunctionType
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,10 +26,6 @@ SECRET_KEY = 'django-insecure-buh9=_c!m99@8k4*k43-(&gkdydu#ezy8dhmvc(1816-m&e81x
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-#STATICFILES_DIRS = [
-#    BASE_DIR / "static", 'C:/entornos/Prueba/Prueba/web/statics',
-#]
 
 
 # Application definition
