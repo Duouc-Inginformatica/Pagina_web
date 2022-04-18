@@ -1,7 +1,7 @@
 const btnSwitch = document.querySelector('#switch');
 
 btnSwitch.addEventListener('click', () => {
-    btnSwitch.classList.toggle('dark');
+    btnSwitch.classList.toggle('active');
     document.body.classList.toggle('dark');
 
     if (document.body.classList.contains('dark')) {
@@ -17,10 +17,8 @@ btnSwitch.addEventListener('click', () => {
         $("div.social_logo").addClass("dark");
         $("a.social__icon--link").addClass("dark");
         $("footer__logo").addClass("dark");
-        modooscuro()
         $("a.navbar__links").addClass("dark");
         $("p.website__rights").addClass("dark");
-        $("section.container").addClass("dark");
         $("#switch").addClass("active");
         localStorage.setItem("dark-mode", "true");
     } else {
@@ -33,7 +31,6 @@ btnSwitch.addEventListener('click', () => {
         $("footer__logo").removeClass("dark");
         $("a.navbar__links").removeClass("dark");
         $("p.website__rights").removeClass("dark");
-        modooblanco()
         $("#switch").removeClass("active");
         localStorage.setItem("dark-mode", "false");
     }
