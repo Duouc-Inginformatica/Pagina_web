@@ -9,8 +9,6 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-from django.conf import settings
-from django.conf.urls.static import static
 from pathlib import Path
 #from types import _StaticFunctionType
 
@@ -29,9 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static", 'C:/Users/sebas/Documents/Prueba/Prueba/web/static/',
-]
+#STATICFILES_DIRS = [
+#    BASE_DIR / "static", 'C:/Users/sebas/Documents/Prueba/Prueba/web/static/',
+#]
 
 
 # Application definition
