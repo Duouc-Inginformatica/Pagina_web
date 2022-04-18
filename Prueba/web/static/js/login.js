@@ -1,8 +1,8 @@
 function logine() {
     Swal.fire({
         title: 'Iniciar sesión',
-        html: `<input type="text" id="login" class="swal2-input" placeholder="Username">
-        <input type="password" id="password" class="swal2-input" placeholder="Password">`,
+        html: `<input type="text" id="login" class="swal2-input" placeholder="Nombre de usuario">
+        <input type="password" id="password" class="swal2-input" placeholder="Contraseña">`,
         confirmButtonText: 'Ingresar',
         confirmButtonColor: '#5c0df0',
         showCancelButton: true,
