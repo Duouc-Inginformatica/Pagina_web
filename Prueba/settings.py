@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Prueba.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/entornos/Prueba/Prueba],
+        'DIRS': ["C:/entornos/Prueba/Prueba/web"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
