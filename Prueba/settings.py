@@ -60,7 +60,7 @@ ROOT_URLCONF = 'Prueba.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/Users/sebas/Documents/Prueba/Prueba/web"],
+        'DIRS': [":C:/entornos/Prueba/Prueba],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
