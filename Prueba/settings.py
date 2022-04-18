@@ -9,8 +9,6 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-from django.conf import settings
-from django.conf.urls.static import static
 from pathlib import Path
 #from types import _StaticFunctionType
 
@@ -28,10 +26,6 @@ SECRET_KEY = 'django-insecure-buh9=_c!m99@8k4*k43-(&gkdydu#ezy8dhmvc(1816-m&e81x
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-STATICFILES_DIRS = [
-    BASE_DIR / "static", 'C:\entornos\Prueba\Prueba\web',
-]
 
 
 # Application definition
@@ -60,7 +54,7 @@ ROOT_URLCONF = 'Prueba.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [":C:/entornos/Prueba/Prueba],
+        'DIRS': ["C:/entornos/Prueba/Prueba],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
