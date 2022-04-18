@@ -1,14 +1,26 @@
+function statusnegro() {
+    if (body.classList.contains("dark")) {
+        return '#242526';
+    } else {
+        return '#FFF'
+
+    }
+
+}
+
 function logine() {
     Swal.fire({
         title: 'Iniciar sesión',
         html: `<input type="text" id="login" class="swal2-input" placeholder="Nombre de usuario">
         <input type="password" id="password" class="swal2-input" placeholder="Contraseña">`,
         confirmButtonText: 'Ingresar',
-        confirmButtonColor: '#5c0df0',
+        confirmButtonColor: '#27f2ae',
         showCancelButton: true,
         cancelButtonText: 'Cancelar',
-        cancelButtonColor: '#5c0df0',
-        background: '#fff',
+        cancelButtonColor: '#27f2ae',
+        background: [
+            statusnegro(),
+        ],
         focusConfirm: false,
         preConfirm: () => {
             const login = Swal.getPopup().querySelector('#login').value

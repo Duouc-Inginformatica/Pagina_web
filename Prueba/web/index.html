@@ -1,90 +1,117 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/main.css" %}'>
-    <title>TecnoGame HOME</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
     <link rel="icon" href="{% static "images/mando.png" %}"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <title>TecnoGamer</title> 
 </head>
-
 <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <img id="iconav" class="logo" src="{% static "images/mando.png" %}">
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span> <span class="bar"></span>
-                <span class="bar"></span>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="{% static "images/mando.png" %}" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">invitado</span>
+                    <span class="profession">cliente</span>
+                </div>
             </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="home" class="navbar__links" id="home">Inicio</a>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Buscar...">
                 </li>
-                <li class="navbar__item">
-                    <a href="game" class="navbar__links">Juegos</a>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Pedidos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-game icon'></i>
+                            <span class="text nav-text">Juegos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-joystick icon' ></i>
+                            <span class="text nav-text">Consola</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-mouse icon' ></i>
+                            <span class="text nav-text">Portatiles</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Compras</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content"> 
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-in icon' ></i>
+                        <span onclick="logine()" class="text nav-text">Iniciar Sesion</span>
+                    </a>
                 </li>
-                <li class="navbar__item">
-                    <a href="portatiles" class="navbar__links">Portatiles</a>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Modo claro </span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
                 </li>
-                <li class="navbar__item">
-                    <a href="service" class="navbar__links">Servicios</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contacto" class="navbar__links">Contacto</a>
-                </li>
-                <li class="navbar__btn"><a onclick="logine()" class="button">Iniciar sesion</a>
-                </li>
-                <button class="switch" id="switch">
-					<span><i class="fas fa-sun"></i></span>
-					<span><i class="fas fa-moon"></i></span>
-				</button>
-            </ul>
+                
+            </div>
         </div>
+
     </nav>
 
+    <section class="home">
+        <div class="text">TecnoGamer</div>
+    </section>
 
-    <!-- Apartado de home -->
+    <script src="{% static "js/script.js" %}"></script>
+    <script src="{% static "js/sweetalert2.all.js" %}"></script>
+    <script src="{% static "js/login.js" %}"></script>
 
-    <!-- Pie de pagina -->
-    <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--wrapper">
-                </div>
-            </div>
-            <section class="social__media">
-                <div class="social__media--wrap">
-                    <p class="website__rights">[Prueba 2022] [Pablo|Seba|Juaco]</p>
-                    <div class="social__icons">
-                        <a class="social__icon--link" href="/" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a class="social__icon--link" href="/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="social__icon--link" href="https://www.youtube.com/" target="_blank" aria-label="Youtube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a class="social__icon--link" href="/" target="_blank" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="{% static "js/sweetalert2.all.js" %}"></script>
-        <script src="{% static "js/dark.js" %}"></script>
-        <script src="{% static "js/redict.js" %}"></script>
-        <script src="{% static "js/app.js" %}"></script>
-        <script src="{% static "js/login.js" %}"></script>
 </body>
-
 </html>
