@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Prueba.vista import index, contacto, game, portatiles, service, session
+from Prueba.vista import index, cliente, compras, consolas, juegos, portatiles
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='home'),
     path('home', index, name='home'),
-    path('contacto', contacto, name='contacto'),
-    path('game', game, name='game'),
-    path('portatiles', portatiles , name='portatiles'),
-    path ('service', service , name='service'),
-    path('session', session , name='session'),
+    path('compras', compras, name='compras'),
+    path('consolas', consolas, name='consolas'),
+    path('juegos', juegos, name='juegos'),
+    path('portatiles', portatiles, name='portatiles'),
+    path('cliente', cliente, name='cliente'),
 ]

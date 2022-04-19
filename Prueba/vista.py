@@ -3,17 +3,17 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 
-def contacto(request):
-    return render(request, 'contacto.html')
+def cliente(request):
+    return render(request, 'cliente.html')
 
-def game(request):
-    return render(request, 'game.html')
+def compras(request):
+    return render(request, 'compras.html')
+
+def consolas(request):
+    return render(request, 'consolas.html')
+
+def juegos(request):
+    return render(request, 'juegos.html')
 
 def portatiles(request):
     return render(request, 'portatiles.html')
-
-def service(request):
-    return render(request, 'service.html')
-
-def session(request):
-    return render(request, 'sesion.html')
