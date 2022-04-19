@@ -26,6 +26,7 @@
     --sidebar-color: #FFF;
     --primary-color: #27f2ae;
     --primary-color-light: #F6F5FF;
+    --border-color: #8c8c8d;
     --toggle-color: #DDD;
     --text-color: #707070;
     /* ====== Transition ====== */
@@ -257,6 +258,10 @@ body.dark .sidebar li a:hover .text {
 .menu-bar .mode .sun-moon {
     height: 50px;
     width: 60px;
+}
+
+.menu {
+    border-top: 1px solid var(--border-color);
 }
 
 .mode .sun-moon i {
