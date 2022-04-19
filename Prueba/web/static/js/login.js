@@ -1,8 +1,8 @@
 function statusnegro() {
     if (body.classList.contains("dark")) {
-        return '#242526';
+        return 'var(--sidebar-color)';
     } else {
-        return '#FFF'
+        return 'var(--primary-color-light)';
 
     }
 
@@ -11,13 +11,15 @@ function statusnegro() {
 function logine() {
     Swal.fire({
         title: 'Iniciar sesión',
+        color: "var(--primary-color)",
         html: `<input type="text" id="login" class="swal2-input" placeholder="Nombre de usuario">
         <input type="password" id="password" class="swal2-input" placeholder="Contraseña">`,
         confirmButtonText: 'Ingresar',
-        confirmButtonColor: '#27f2ae',
+        confirmButtonTextcolor: 'var(--primary-color-light)',
+        confirmButtonColor: 'var(--primary-color)',
         showCancelButton: true,
         cancelButtonText: 'Cancelar',
-        cancelButtonColor: '#27f2ae',
+        cancelButtonColor: 'var(--cancel-color)',
         background: [
             statusnegro(),
         ],
