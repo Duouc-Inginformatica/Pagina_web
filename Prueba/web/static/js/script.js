@@ -7,9 +7,9 @@ const body = document.querySelector('body'),
 
 
 toggle.addEventListener("click", () => {
-    sidebar.classList.toggle("close");
-})
-
+        sidebar.classList.toggle("close");
+    })
+    // funcion para fozar el cierrre de la pestaña y el menu al apretar el boton de buscar
 searchBtn.addEventListener("click", () => {
     if (sidebar.classList.contains("close")) {
         // console.log("la barra de navegacion esta cerrada");

@@ -1,3 +1,4 @@
+// funcion para saber si la pagina esta en negro o en blanco
 function statusnegro() {
     if (body.classList.contains("dark")) {
         return 'var(--sidebar-color)';
