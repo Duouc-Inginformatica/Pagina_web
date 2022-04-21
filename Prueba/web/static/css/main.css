@@ -6,7 +6,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
     /* Google Font Import - Roboto */
     
-    @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900);
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&display=swap);
     /* Sweet alert Import  - Framework */
     
     @import url("sweetalert2.css");
@@ -409,4 +409,144 @@
         color: var(--text-color);
         cursor: pointer;
     }
-    /* home páge center */
+    /* responsive patch */
+    
+    @media (max-width: 1000px) {
+        nav {
+            width: 73px;
+        }
+        nav.close {
+            width: 250px;
+        }
+        nav .icon {
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav.close .icon {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        nav li a .link-name {
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav.close li a .link-name {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        nav~.sidebar {
+            left: 73px;
+            width: calc(100% - 73px);
+        }
+        nav.close~.sidebar {
+            left: 250px;
+            width: calc(100% - 250px);
+        }
+        nav~.sidebar .top {
+            left: 73px;
+            width: calc(100% - 73px);
+        }
+        nav.close~.sidebar .top {
+            left: 250px;
+            width: calc(100% - 250px);
+        }
+    }
+    
+    @media (max-width: 780px) {
+        .top .search-box_1 .search-box_1 input {
+            width: calc(100% / 2 - 15px);
+            margin-top: 15px;
+        }
+    }
+    
+    @media (max-width: 560px) {
+        .top .search-box_1 .search-box_1 input .nav {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        nav {
+            width: 0px;
+        }
+        nav.close {
+            width: 73px;
+        }
+        nav .icon {
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav.close .icon {
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav li a .link-name {
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav.close li a .link-name {
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav~.sidebar {
+            left: 0;
+            width: 100%;
+        }
+        nav.close~.sidebar {
+            left: 73px;
+            width: calc(100% - 73px);
+        }
+        nav~.sidebar .top {
+            left: 0;
+            width: 100%;
+        }
+        nav.close~.sidebar .top {
+            left: 0;
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 380px) {
+        nav {
+            width: 0px;
+        }
+        nav.close {
+            width: 73px;
+        }
+        nav .icon {
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav.close .icon {
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav li a .link-name {
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav.close li a .link-name {
+            opacity: 0;
+            pointer-events: none;
+        }
+        nav~.sidebar {
+            left: 0;
+            width: 100%;
+        }
+        nav.close~.sidebar {
+            left: 73px;
+            width: calc(100% - 73px);
+        }
+        nav~.sidebar .top {
+            left: 0;
+            width: 100%;
+        }
+        nav.close~.sidebar .top {
+            left: 0;
+            width: 100%;
+        }
+        .search-box_1 {
+            left: 0%;
+            width: calc(100% - 73px);
+        }
+    }
