@@ -1,8 +1,8 @@
 <p align="left">
-<img src="https://raw.githubusercontent.com/Duouc-Inginformatica/Pagina_web/master/ss/blanco.png" > 
+<img src="https://raw.githubusercontent.com/Duouc-Inginformatica/card-img/main/blanco.png" > 
 </p>
 <p align="right">
-<img src="https://raw.githubusercontent.com/Duouc-Inginformatica/Pagina_web/master/ss/negro.png" > 
+<img src="https://raw.githubusercontent.com/Duouc-Inginformatica/card-img/main/negro.png" > 
 </p>
 
 Esto es un proyecto con una página web de venta de videojuegos con las siguientes tecnologías:
