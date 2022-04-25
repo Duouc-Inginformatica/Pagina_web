@@ -4,18 +4,18 @@ const fondoAvisoCookies = document.getElementById('fondo-aviso-cookies');
 
 dataLayer = [];
 
-if(!localStorage.getItem('cookies-aceptadas')){
-	avisoCookies.classList.add('activo');
-	fondoAvisoCookies.classList.add('activo');
+if (!localStorage.getItem('cookies-aceptadas')) {
+    avisoCookies.classList.add('activo');
+    fondoAvisoCookies.classList.add('activo');
 } else {
-	dataLayer.push({'event': 'cookies-aceptadas'});
+    dataLayer.push({ 'event': 'cookies-aceptadas' });
 }
 
 botonAceptarCookies.addEventListener('click', () => {
-	avisoCookies.classList.remove('activo');
-	fondoAvisoCookies.classList.remove('activo');
+    avisoCookies.classList.remove('activo');
+    fondoAvisoCookies.classList.remove('activo');
 
-	localStorage.setItem('cookies-aceptadas', true);
+    localStorage.setItem('cookies-aceptadas', true);
 
-	dataLayer.push({'event': 'cookies-aceptadas'});
+    dataLayer.push({ 'event': 'cookies-aceptadas' });
 });
