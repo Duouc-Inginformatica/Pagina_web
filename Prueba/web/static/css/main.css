@@ -6,15 +6,22 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
     /* Google Font Import - Roboto */
     
-    @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&display=swap);
+    @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&display=swap");
     /* Sweet alert Import  - Framework */
     
     @import url("sweetalert2.css");
+    @import url("cardview.css");
+    @import url("cockies.css");
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
+        /* para satisfacer los espacios de las grid se utiliza webkit para dimenciones  */
+        --h1-font-size: 1.5rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --smaller-font-size: 0.75rem;
     }
     
      :root {
@@ -29,6 +36,7 @@
         --toggle-color: #DDD;
         --black-light-color: var(--text-color);
         --text-color: #707070;
+        --cardview-color: #707070;
         /* ====== Transition ====== */
         --tran-03: all 0.2s ease;
         --tran-03: all 0.3s ease;
@@ -356,6 +364,17 @@
         margin: 0 30px;
     }
     
+    .home_icons {
+        right: 250px;
+        display: flex;
+        margin: 27px;
+        font-size: 1.5rem;
+    }
+    
+    .home__icon:hover {
+        color: var(--primary-color);
+    }
+    
     .top .search-box_1 input {
         position: absolute;
         border: 1px solid var(--border-color);
@@ -503,50 +522,5 @@
         nav.close~.sidebar .top {
             left: 0;
             width: 100%;
-        }
-    }
-    
-    @media (max-width: 380px) {
-        nav {
-            width: 0px;
-        }
-        nav.close {
-            width: 73px;
-        }
-        nav .icon {
-            opacity: 0;
-            pointer-events: none;
-        }
-        nav.close .icon {
-            opacity: 0;
-            pointer-events: none;
-        }
-        nav li a .link-name {
-            opacity: 0;
-            pointer-events: none;
-        }
-        nav.close li a .link-name {
-            opacity: 0;
-            pointer-events: none;
-        }
-        nav~.sidebar {
-            left: 0;
-            width: 100%;
-        }
-        nav.close~.sidebar {
-            left: 73px;
-            width: calc(100% - 73px);
-        }
-        nav~.sidebar .top {
-            left: 0;
-            width: 100%;
-        }
-        nav.close~.sidebar .top {
-            left: 0;
-            width: 100%;
-        }
-        .search-box_1 {
-            left: 0%;
-            width: calc(100% - 73px);
         }
     }
