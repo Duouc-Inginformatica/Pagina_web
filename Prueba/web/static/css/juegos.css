@@ -111,6 +111,7 @@ article:nth-child(4) {
 .card__preci--now {
     font-size: var(--h3-font-size);
     font-weight: bold;
+    color: var(--border-color);
 }
 
 .store {
@@ -147,7 +148,7 @@ article:nth-child(4) {
 }
 
 .card:hover .card__img {
-    transform: rotate(360deg);
+    transform: rotate(30deg);
     margin-left: 3.5rem;
 }
 
