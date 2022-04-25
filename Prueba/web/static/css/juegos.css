@@ -84,6 +84,10 @@ article:nth-child(4) {
     color: var(--dark-color);
 }
 
+.card__icon:hover {
+    color: var(--primary-color);
+}
+
 .card__precis {
     width: 100%;
     display: flex;
