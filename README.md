@@ -3,9 +3,13 @@ Hola mundo
 
 Esto es un proyecto con una página web de venta de videojuegos con las siguientes tecnologías:
  * Python
- * HTML/Javascript
+ * HTML
+ * Javascript
  * Django
  * Bootstrap
+ * SweetAlert2
+ * vue.js
+ * PHP
 
 ### Uso:
 
