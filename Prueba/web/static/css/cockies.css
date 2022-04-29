@@ -35,7 +35,6 @@
 
 .aviso-cookies .boton {
     width: 100%;
-    background: var(--primary-color-light);
     border: none;
     color: var(--dark-color);
     text-align: center;
