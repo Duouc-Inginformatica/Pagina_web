@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static", 'C:/Users/sebas/Documents/Prueba/Prueba/web/static/',
+    BASE_DIR / "static", 'C:/Users/sebas/Documents/test/Prueba/web/static/',
 ]
 
 
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'Prueba.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/Users/sebas/Documents/Prueba/Prueba/web"],
+        'DIRS': ["C:/Users/sebas/Documents/test/Prueba/web"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
