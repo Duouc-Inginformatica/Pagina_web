@@ -13,10 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from unittest.mock import patch
 from django.contrib import admin
 from django.urls import path
-from Prueba.vista import index, cliente, compras, consolas, juegos, portatiles, registro, cokies
+from Prueba.vista import index, cliente, compras, consolas, juegos, portatiles, registro
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,5 +27,4 @@ urlpatterns = [
     path('portatiles', portatiles, name='portatiles'),
     path('cliente', cliente, name='cliente'),
     path('registro', registro, name='registro'),
-    patch('cokies', cokies, name='cokies'),
 ]
