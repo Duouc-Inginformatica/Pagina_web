@@ -17,7 +17,9 @@
 @import url("sweetalert2.css");
 @import url("juegos.css");
 @import url("cockies.css");
+@import url("sweet.css");
 @import url("cliente.css");
+@import url("form.css");
 * {
     margin: 0;
     padding: 0;
