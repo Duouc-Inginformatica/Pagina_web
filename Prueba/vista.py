@@ -20,3 +20,6 @@ def portatiles(request):
 
 def registro(request):
     return render(request, 'registro.html')
+
+def texto(request):
+    return render(request, 'texto.html')

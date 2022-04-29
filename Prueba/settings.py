@@ -28,7 +28,11 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
+<<<<<<< HEAD
     BASE_DIR / "static", 'C:/Users/joako/OneDrive/Desktop/Carpeta_git/Prueba_pagina_web/Pagina_web/Prueba/web/static',
+=======
+    BASE_DIR / "static", 'C:/Users/sebas/Documents/test/Prueba/web/static/',
+>>>>>>> ef3bfdc (render text.html for django)
 ]
 
 
@@ -58,7 +62,11 @@ ROOT_URLCONF = 'Prueba.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': ["C:/Users/joako/OneDrive/Desktop/Carpeta_git/Prueba_pagina_web/Pagina_web/Prueba/web"],
+=======
+        'DIRS': ["C:/Users/sebas/Documents/test/Prueba/web"],
+>>>>>>> ef3bfdc (render text.html for django)
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
