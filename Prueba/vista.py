@@ -17,3 +17,6 @@ def juegos(request):
 
 def portatiles(request):
     return render(request, 'portatiles.html')
+
+def registro(request):
+    return render(request, 'registro.html')
