@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/main.css" %}'>
+    <link rel="icon" href="{% static " images/mando.png " %}"/>
+    <title>TecnoGamer INFO</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="{% static "images/mando.png" %}" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">invitado</span>
+                    <span class="profession">cliente</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="home">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Modo claro </span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="top">
+            <div class="search-box_1">
+                <i class="bx bx-search icon"></i>
+                <input type="text" placeholder="Buscar...">
+            </div>
+        </div>
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="bx bx-user icon"></i>
+                    <span class="text_1">Que son las cokies</span>
+                    <spam class="textcockies">Las cookies suelen utilizarse principalmente para dos finalidades principales: recordar accesos y conocer hábitos de navegación. Las cookies hacen que las páginas web puedan identificar tu ordenador, y por lo tanto, si vuelves a entrar
+                        a ellas podrán recordar quién eres y qué has hecho antes dentro de ellas. Lo más importante de las cookies son sus funciones para recordar accesos. Si no existieran, cada vez que entras en una página tendrías que iniciar sesión
+                        en ella, algo que acabaría siendo incómodo. En cambio, gracias a las cookies la página web podrá recordar que eres tú, y por lo tanto podrá permitirte seguir en el perfil con el que iniciases sesión sin tener que volver a escribir
+                        tus credenciales. Y no sólo para iniciar sesión. Imagínate que entras en Amazon y colocas muchos archivos en tu cesta de la compra sin tener una cuenta, pero luego te vas. Entonces, cuando vuelvas a entrar, gracias a tu IP y los
+                        otros identificadores que miran las cookies, Amazon sabrá quién eres y qué hiciste antes, y muy posiblemente todavía podrá recordar lo que tenías en la cesta de la compra para que no tengas que volver a meterlo. Y como estos dos
+                        ejemplos, hay muchos más. Las cookies no son malas por naturaleza, ya que son útiles al recordar tus configuraciones y estados en las webs que has visitado en tu actual sesión de navegación. También ayudan a recordar otros datos
+                        como que prefieres usar el tema oscuro en una web, que estás buscando vuelos a Los Ángeles o que tu divisa preferida es el euro. Y la segunda función es la más conflictiva, y precisamente la que ha hecho que tengan tan mala fama.
+                        Las cookies también sirven para conocer la información sobre tus hábitos de navegación, algo que pueden utilizar terceros para enviarte información relacionada a tus intereses, pero también para identificarte como usuario según
+                        las páginas que visitas. Algunas empresas como Facebook y otros servicios publicitarios, insertan paquetes de cookies en muchísimas de las webs que visitas en Internet, aunque no estén relacionadas con sus servicios. De hecho,
+                        cuando configuras las cookies puedes fijarte en que uno de los apartados que puedes deshabilitar es el de los socios comerciales, que son precisamente las empresas de publicidad.</spam>
+
+                </div>
+            </div>
+
+    </section>
+
+
+    <script src="{% static " js/script.js " %}"></script>
+    <script src="{% static " js/sweetalert2.all.js " %}"></script>
+    <script src="{% static " js/login.js " %}"></script>
+    <script src="{% static " js/aviso-cookies.js " %}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</body>
+
+</html>
