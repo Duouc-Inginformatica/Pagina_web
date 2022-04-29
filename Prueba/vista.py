@@ -20,3 +20,6 @@ def portatiles(request):
 
 def registro(request):
     return render(request, 'registro.html')
+
+def cokies(request):
+    return render(request, 'cokies.html')
