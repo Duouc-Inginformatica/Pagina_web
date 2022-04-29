@@ -1,37 +1,33 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/main.css" %}'>
-    <link rel="icon" href="{% static "images/mando.png" %}"/>
+    <link rel="icon" href="{% static " images/mando.png " %}"/>
     <title>TecnoGamer Juegos</title>
     <!-- Google Tag Manager cokies -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MB7HJ8K');</script>
-        <!-- End Google Tag Manager -->
 </head>
+
 <body>
 
     <!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB7HJ8K"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB7HJ8K"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
 
 
     <div class="aviso-cookies" id="aviso-cookies">
-		<img class="galleta" src="{% static "images/mando.png"%}" alt="Galleta">
-		<h3 class="titulo">Cookies</h3>
-		<p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
-		<button class="boton" id="btn-aceptar-cookies">Acepto</button>
-		<a class="enlace" href="index">Que es esto?</a>
-	</div>
-	<div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+        <img class="galleta" src="{% static " images/mando.png "%}" alt="Galleta">
+        <h3 class="titulo">Cookies</h3>
+        <p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+        <button class="boton" id="btn-aceptar-cookies">Acepto</button>
+        <a class="enlace" href="index">Que es esto?</a>
+    </div>
+    <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
 
     <nav class="sidebar close">
         <header>
@@ -54,42 +50,42 @@
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="home">
-                            <i class='bx bx-home-alt icon' ></i>
-                            <span  class="text nav-text">Inicio</span>
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Inicio</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="cliente">
-                            <i class='bx bx-user icon' ></i>
-                            <span  class="text nav-text">Cliente</span>
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Cliente</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="juegos">
                             <i class='bx bx-game icon'></i>
-                            <span  class="text nav-text">Juegos</span>
+                            <span class="text nav-text">Juegos</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="consolas">
-                            <i class='bx bx-joystick icon' ></i>
-                            <span  class="text nav-text">Consola</span>
+                            <i class='bx bx-joystick icon'></i>
+                            <span class="text nav-text">Consola</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="portatiles">
-                            <i class='bx bx-mouse icon' ></i>
-                            <span  class="text nav-text">Portatiles</span>
+                            <i class='bx bx-mouse icon'></i>
+                            <span class="text nav-text">Portatiles</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="compras">
-                            <i class='bx bx-wallet icon' ></i>
+                            <i class='bx bx-wallet icon'></i>
                             <span class="text nav-text">Compras</span>
                         </a>
                     </li>
@@ -97,10 +93,10 @@
                 </ul>
             </div>
 
-            <div class="bottom-content"> 
+            <div class="bottom-content">
                 <li class="">
                     <a href="#">
-                        <i class='bx bx-log-in icon' ></i>
+                        <i class='bx bx-log-in icon'></i>
                         <span onclick="logine()" class="text nav-text">Iniciar Sesion</span>
                     </a>
                 </li>
@@ -116,7 +112,7 @@
                         <span class="switch"></span>
                     </div>
                 </li>
-                
+
             </div>
         </div>
 
@@ -126,90 +122,107 @@
         <div class="top">
             <div class="search-box_1">
                 <i class="bx bx-search icon"></i>
-                    <input type="text" placeholder="Buscar...">
+                <input type="text" placeholder="Buscar...">
             </div>
         </div>
     </section>
     <store id="gamecard" class="main bd-grid">
         <article class="card">
             <div class="card__img">
-                <img src="{% static "images/valorant.jpeg" %}" alt="">
+                <img src="{% static " images/valorant.jpeg " %}" alt="">
             </div>
             <div class="card__name">
-            <p>VALORANT PC</p>
+                <p>VALORANT PC</p>
             </div>
             <div class="card__precis">
-                <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
-            
+                <a href="" class="card__icon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </a>
+
                 <div>
                     <span class="card__preci card__preci--before">25.990</span>
                     <span class="card__preci card__preci--now">$18.900</span>
                 </div>
-             <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                <a href="" class="card__icon">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </a>
             </div>
         </article>
 
 
         <article class="card">
             <div class="card__img">
-                <img src="{% static "images/gtav.jpeg" %}" alt="">
+                <img src="{% static " images/gtav.jpeg " %}" alt="">
             </div>
             <div class="card__name">
-             <p>Grand Theft Auto V</p>
+                <p>Grand Theft Auto V</p>
             </div>
             <div class="card__precis">
-             <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
-             <div>
-                 <span class="card__preci card__preci--before">$49.990</span>
+                <a href="" class="card__icon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </a>
+                <div>
+                    <span class="card__preci card__preci--before">$49.990</span>
                     <span class="card__preci card__preci--now">$32.990</span>
-             </div>
-             <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
-         </div>
-        </article>
-
-        <article class="card">
-         <div class="card__img">
-             <img src="{% static "images/minecraft.jpeg" %}" alt="">
-         </div>
-         <div class="card__name">
-             <p>Maicla</p>
-         </div>
-         <div class="card__precis">
-             <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
-
-             <div>
-                 <span class="card__preci card__preci--before">20.990</span>
-                    <span class="card__preci card__preci--now">$15.990</span>
-             </div>
-             <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+                <a href="" class="card__icon">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </a>
             </div>
         </article>
 
         <article class="card">
-         <div class="card__img">
-             <img src="{% static "images/fifa22.jpeg" %}" alt="">
-         </div>
-         <div class="card__name">
-             <p>FIFA 22</p>
-         </div>
-         <div class="card__precis">
-             <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
+            <div class="card__img">
+                <img src="{% static " images/minecraft.jpeg " %}" alt="">
+            </div>
+            <div class="card__name">
+                <p>Maicla</p>
+            </div>
+            <div class="card__precis">
+                <a href="" class="card__icon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </a>
 
-             <div>
-                 <span class="card__preci card__preci--before">69.990</span>
-                 <span class="card__preci card__preci--now">$59.990</span>
-             </div>
-             <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
-         </div>
-     </article>
+                <div>
+                    <span class="card__preci card__preci--before">20.990</span>
+                    <span class="card__preci card__preci--now">$15.990</span>
+                </div>
+                <a href="" class="card__icon">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card__img">
+                <img src="{% static " images/fifa22.jpeg " %}" alt="">
+            </div>
+            <div class="card__name">
+                <p>FIFA 22</p>
+            </div>
+            <div class="card__precis">
+                <a href="" class="card__icon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </a>
+
+                <div>
+                    <span class="card__preci card__preci--before">69.990</span>
+                    <span class="card__preci card__preci--now">$59.990</span>
+                </div>
+                <a href="" class="card__icon">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </a>
+            </div>
+        </article>
     </Store>
 
-    <script src="{% static "js/script.js" %}"></script>
-    <script src="{% static "js/sweetalert2.all.js" %}"></script>
-    <script src="{% static "js/login.js" %}"></script>
+    <script src="{% static " js/script.js " %}"></script>
+    <script src="{% static " js/sweetalert2.all.js " %}"></script>
+    <script src="{% static " js/login.js " %}"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="{% static "js/aviso-cookies.js" %}"></script>
+    <script src="{% static " js/aviso-cookies.js " %}"></script>
 
 </body>
+
 </html>
