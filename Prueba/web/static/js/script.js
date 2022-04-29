@@ -24,7 +24,7 @@ searchBtn.addEventListener("click", () => {
 })
 
 // funcion para almacenar el modo oscuro unido a la cookie y cambiar el modo de la pagina al apretar el boton de modo oscuro o claro
-if (!localStorage.getItem('modo-oscuro')) {
+if (localStorage.getItem('modo-oscuro')) {
     body.classList.add('dark');
     modeSwitch.checked = true;
 } else {
@@ -40,7 +40,6 @@ modeSwitch.addEventListener("click", () => {
     if (body.classList.contains("dark")) {
         modeText.innerText = "Modo oscuro ";
         localStorage.setItem('modo-oscuro', true);
-        dataLayer.push({ 'event': 'modo-oscuro' });
     } else {
         modeText.innerText = "Modo claro ";
         // console.log("se activo el modo claro por toque de usuario");
