@@ -1,0 +1,256 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href="css/main.css">
+    <link rel="icon" href="images/mando.png" />
+    <title>TecnoGamer Juegos</title>
+    <!-- Google Tag Manager cokies -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MB7HJ8K');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB7HJ8K" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="aviso-cookies" id="aviso-cookies">
+        <img class="galleta" src="images/mando.png" alt="Galleta">
+        <h3 class="titulo">Cookies</h3>
+        <p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+        <button class="boton" id="btn-aceptar-cookies">Acepto</button>
+        <a class="enlace" href="index">Que es esto?</a>
+    </div>
+    <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="images/mando.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">invitado</span>
+                    <span class="profession">cliente</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="cliente.html">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Cliente</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="juegos.html">
+                            <i class='bx bx-game icon'></i>
+                            <span class="text nav-text">Juegos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="consolas.html">
+                            <i class='bx bx-joystick icon'></i>
+                            <span class="text nav-text">Consola</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="portatiles.html">
+                            <i class='bx bx-mouse icon'></i>
+                            <span class="text nav-text">Portatiles</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="compras.html">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Compras</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a onclick="logine()">
+                        <i class='bx bx-log-in icon'></i>
+                        <span onclick="logine()" class="text nav-text">Iniciar Sesion</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Modo claro </span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="bottom-content">
+        <li class="">
+            <a href="#">
+                <i class='bx bx-log-in icon'></i>
+                <span onclick="logine()" class="text nav-text">Iniciar Sesion</span>
+            </a>
+        </li>
+
+        <li class="mode">
+            <div class="sun-moon">
+                <i class='bx bx-moon icon moon'></i>
+                <i class='bx bx-sun icon sun'></i>
+            </div>
+            <span class="mode-text text">Modo claro </span>
+
+            <div class="toggle-switch">
+                <span class="switch"></span>
+            </div>
+        </li>
+
+    </div>
+    </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="top">
+            <div class="search-box_1">
+                <i class="bx bx-search icon"></i>
+                <input type="text" placeholder="Buscar...">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Apartado de home -->
+    <div class="">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>TecnoGames</h1>
+                <h2>Registro</h2>
+                <p>Ingresa tus datos</p>
+            </div>
+            <div class=" form main__img--container">
+                <form action="registrado.html" enctype="text/plain" method="post" name="registro">    
+                    <br>
+                    <input class="form_reg_in" type="text" name="nombre_usr" id="nombre_usr" placeholder="Nombre de usuario" required />
+                    <br>
+                    <input class="form_reg_in" type="password" name="password" id="password" placeholder="Contraseña" required />
+                    <br>
+                    <input class="form_reg_in" type="text" name="nombre" id="nombre" placeholder="Nombre" required />
+                    <br>
+                    <input class="form_reg_in" type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required />
+                    <br>
+                    <label class="form_reg" for="fecha_nac">Fecha de nacimiento</label>
+                    <br>
+                    <input class="form_reg_in" type="date" name="fecha_nac" id="fecha_nac" placeholder="" required />
+                    <br>
+                    <label class="form_reg" for="sexo">Sexo</label>
+                    <br>
+                    <div aria-required="true">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Radio1" value="Masculino" checked>
+                        <label class="form-check-label" for="Radio1">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Radio2" value="Femenino">
+                        <label class="form-check-label" for="Radio2">Femenino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Radio3" value="No_binario">
+                    <label class="form-check-label" for="Radio3">No binario</label>
+                    </div>
+                    <br>
+                    <br>
+                    <input class="form_reg_in" type="email" name="correo" id="correo" placeholder="Correo electronico" required />
+                    <br>
+                    <input type="reset" value="Limpiar"> <input type="submit" value="Registrarse">
+                </div>
+                </form> 
+            </div>
+            </div>
+            </div>
+        
+            
+        
+    
+    <!-- Pie de pagina -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--wrapper">
+                </div>
+            </div>
+            <section class="social__media">
+                <div class="social__media--wrap">
+                    <p class="website__rights">© 2022. All rights reserved</p>
+                    <div class="social__icons">
+                        <a class="social__icon--link" href="/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a class="social__icon--link" href="/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="social__icon--link" href="https://www.youtube.com/" target="_blank"
+                            aria-label="Youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="social__icon--link" href="/" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="social__icon--link" href="/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+        <script src="js/app.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
