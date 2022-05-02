@@ -15,9 +15,9 @@ function logine() {
         color: "var(--primary-color)",
         html: `<input type="text" id="login" class="swal2-input" placeholder="Nombre de usuario">
         <input type="password" id="password" class="swal2-input" placeholder="Contraseña">
-        <br> <br> <br> 
+        <br> <br> 
         Usuario nuevo?
-        <button type="button" value="b" class="swal2-confirm swal2-styled swal2-default-outline">Registrese aqui</button>`,
+        <a href="registro"><spam type="button" class="swal2-confirm swal2-styled swal2-default-outline">Registrese aqui</spam></a>`,
         confirmButtonText: 'Ingresar',
         confirmButtonTextcolor: 'var(--primary-color-light)',
         confirmButtonColor: 'var(--primary-color)',

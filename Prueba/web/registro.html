@@ -6,22 +6,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/main.css" %}'>
     <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/form.css" %}'>
     <link rel="icon" href="{% static " images/mando.png " %}"/>
     <title>TecnoGamer Registro</title>
 </head>
-<body_form>
-  <section class="form-register">
-    <h4>Formulario Registro</h4>
-    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-    <input class="botons" type="submit" value="Registrar">
-    <p><a href="#">¿Ya tengo Cuenta?</a></p>
-  </section>
+<body>
+  <div class="container">
+      <header>Registration</header>
 
-</body_form>
+      <form action="#">
+          <div class="form first">
+              <div class="details personal">
+                  <span class="title">Datos personales</span>
+
+                  <div class="fields">
+                      <div class="input-field">
+                          <label>Nombre completo</label>
+                          <input type="text" placeholder="Ingrese su nombre completo" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Fecha de nacimiento</label>
+                          <input type="date" placeholder="ingrese su fecha de nacimiento" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Correo</label>
+                          <input type="text" placeholder="Ingrese su correo" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Edad</label>
+                          <input type="number" placeholder="Ingrese su edad" required>
+                      </div>
+                      <div class="input-field">
+                        <label>Ingrese su numero de telefono</label>
+                        <input type="text" placeholder="Ingrese numero de telefono" required>
+                    </div>
+                      <div class="input-field">
+                          <label>Genero</label>
+                          <select required>
+                              <option disabled selected>Selecciones su genero</option>
+                              <option>Hombre</option>
+                              <option>Mujer</option>
+                              <option>Helicoptero Apache</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="details ID">
+                  <span class="title">Datos Adicionales para envio</span>
+
+                  <div class="fields">
+                      <div class="input-field">
+                          <label>RUT</label>
+                          <input type="text" placeholder="Ingrese su rut" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Ingrese otro numero de telefono</label>
+                          <input type="text" placeholder="Ingrese otro numero de telefono">
+                      </div>
+
+                      <div class="input-field">
+                          <label>Direccion</label>
+                          <input type="text" placeholder="Ingrese su direccion completa" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Ingrese comentarios</label>
+                          <input type="text" placeholder="Ingrese datos adicionales a su compra" required>
+                      </div>
+                  </div>
+                  <button class="nextBtn">
+                      <span class="btnText">Next</span>
+                      <i class="uil uil-navigator"></i>
+                  </button>
+              </div> 
+          </div>
+
+          <div class="form second">
+              <div class="details address">
+                  <span class="title">Address Details</span>
+
+                  <div class="fields">
+                      <div class="input-field">
+                          <label>Direciones adicionales</label>
+                          <input type="text" placeholder="Ingrese datos adicionales" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Region</label>
+                          <input type="text" placeholder="Ingrese su region" required>
+                      </div>
+
+                      <div class="input-field">
+                          <label>Comuna</label>
+                          <input type="text" placeholder="Ingrese su comuna" required>
+                      </div>
+                      <div class="input-field">
+                        <label>Numero de casa</label>
+                        <input type="number" placeholder="Ingrese numero de domicilio" required>
+                    </div>
+                  </div>
+
+              </div>
+                  <div class="buttons">
+                      <div class="backBtn">
+                          <i class="uil uil-navigator"></i>
+                          <span class="btnText">Atras</span>
+                      </div>
+                      
+                      <button class="sumbit">
+                          <span class="btnText">Enviar</span>
+                          <i class="uil uil-navigator"></i>
+                      </button>
+                  </div>
+              </div> 
+          </div>
+      </form>
+  </div>
+
+  <script src="{% static "js/script.js" %}"></script>
+  <script src="{% static "js/login.js" %}"></script>
+</body>
 </html>
