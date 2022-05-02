@@ -17,12 +17,14 @@ body{
 .container{
     position: relative;
     max-width: 900px;
-    width: 100%;
-    border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
+    width: 153%;
+    border-radius: 9px;
+    padding: 7px;
+    margin: 0px 19px;
     background-color: var(--cardview-color);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    left: 36px;
+    padding-block: inherit;
 }
 .container header{
     position: relative;
@@ -73,7 +75,7 @@ form.secActive .form.first{
     font-size: 16px;
     font-weight: 500;
     margin: 6px 0;
-    color: #333;
+    color: var(text-color);
 }
 .container form .fields{
     display: flex;
@@ -90,13 +92,13 @@ form .fields .input-field{
 .input-field label{
     font-size: 12px;
     font-weight: 500;
-    color: #2e2e2e;
+    color: var(text-color);
 }
 .input-field input, select{
     outline: none;
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: var(text-color);
     border-radius: 5px;
     border: 1px solid #aaa;
     padding: 0 15px;
@@ -123,7 +125,7 @@ form .fields .input-field{
     width: 100%;
     border: none;
     outline: none;
-    color: #fff;
+    color: var(text-color);
     border-radius: 5px;
     margin: 25px 0;
     background-color: var(--primary-color);
@@ -133,6 +135,7 @@ form .fields .input-field{
 .container form .btnText{
     font-size: 14px;
     font-weight: 400;
+    color: var(text-color);
 }
 form button:hover{
     background-color: var(secondary-color);
