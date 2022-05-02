@@ -1,134 +1,267 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/main.css" %}'>
     <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/form.css" %}'>
-    <link rel="icon" href="{% static " images/mando.png " %}"/>
-    <title>TecnoGamer Registro</title>
+    <link rel="icon" href="{% static "images/mando.png" %}"/>
+    <title>TecnoGamer Juegos</title>
+    <!-- Google Tag Manager cokies -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MB7HJ8K');</script>
+        <!-- End Google Tag Manager -->
 </head>
 <body>
-  <div class="container">
-      <header>Registration</header>
 
-      <form action="#">
-          <div class="form first">
-              <div class="details personal">
-                  <span class="title">Datos personales</span>
+    <!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB7HJ8K"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
-                  <div class="fields">
-                      <div class="input-field">
-                          <label>Nombre completo</label>
-                          <input type="text" placeholder="Ingrese su nombre completo" required>
-                      </div>
 
-                      <div class="input-field">
-                          <label>Fecha de nacimiento</label>
-                          <input type="date" placeholder="ingrese su fecha de nacimiento" required>
-                      </div>
+    <div class="aviso-cookies" id="aviso-cookies">
+		<img class="galleta" src="{% static "images/mando.png"%}" alt="Galleta">
+		<h3 class="titulo">Cookies</h3>
+		<p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+		<button class="boton" id="btn-aceptar-cookies">Acepto</button>
+		<a class="enlace" href="https://european-union.europa.eu/cookies_es">Que es esto?</a>
+	</div>
+	<div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
 
-                      <div class="input-field">
-                          <label>Correo</label>
-                          <input type="text" placeholder="Ingrese su correo" required>
-                      </div>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="{% static "images/mando.png" %}" alt="">
+                </span>
 
-                      <div class="input-field">
-                          <label>Edad</label>
-                          <input type="number" placeholder="Ingrese su edad" required>
-                      </div>
-                      <div class="input-field">
-                        <label>Ingrese su numero de telefono</label>
-                        <input type="text" placeholder="Ingrese numero de telefono" required>
+                <div class="text logo-text">
+                    <span class="name">invitado</span>
+                    <span class="profession">cliente</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="home">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span  class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="cliente">
+                            <i class='bx bx-user icon' ></i>
+                            <span  class="text nav-text">Cliente</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="juegos">
+                            <i class='bx bx-game icon'></i>
+                            <span  class="text nav-text">Juegos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="consolas">
+                            <i class='bx bx-joystick icon' ></i>
+                            <span  class="text nav-text">Consola</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="portatiles">
+                            <i class='bx bx-mouse icon' ></i>
+                            <span  class="text nav-text">Portatiles</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="compras">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Compras</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content"> 
+                <li class="">
+                    <a onclick="logine()">
+                        <i class='bx bx-log-in icon' ></i>
+                        <span class="text nav-text">Iniciar Sesion</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
                     </div>
-                      <div class="input-field">
-                          <label>Genero</label>
-                          <select required>
-                              <option disabled selected>Selecciones su genero</option>
-                              <option>Hombre</option>
-                              <option>Mujer</option>
-                              <option>Helicoptero Apache</option>
-                          </select>
-                      </div>
-                  </div>
-              </div>
+                    <span class="mode-text text">Modo claro </span>
 
-              <div class="details ID">
-                  <span class="title">Datos Adicionales para envio</span>
-
-                  <div class="fields">
-                      <div class="input-field">
-                          <label>RUT</label>
-                          <input type="text" placeholder="Ingrese su rut" required>
-                      </div>
-
-                      <div class="input-field">
-                          <label>Ingrese otro numero de telefono</label>
-                          <input type="text" placeholder="Ingrese otro numero de telefono">
-                      </div>
-
-                      <div class="input-field">
-                          <label>Direccion</label>
-                          <input type="text" placeholder="Ingrese su direccion completa" required>
-                      </div>
-
-                      <div class="input-field">
-                          <label>Ingrese comentarios</label>
-                          <input type="text" placeholder="Ingrese datos adicionales a su compra" required>
-                      </div>
-                  </div>
-                  <button class="nextBtn">
-                      <span class="btnText">Next</span>
-                      <i class="uil uil-navigator"></i>
-                  </button>
-              </div> 
-          </div>
-
-          <div class="form second">
-              <div class="details address">
-                  <span class="title">Address Details</span>
-
-                  <div class="fields">
-                      <div class="input-field">
-                          <label>Direciones adicionales</label>
-                          <input type="text" placeholder="Ingrese datos adicionales" required>
-                      </div>
-
-                      <div class="input-field">
-                          <label>Region</label>
-                          <input type="text" placeholder="Ingrese su region" required>
-                      </div>
-
-                      <div class="input-field">
-                          <label>Comuna</label>
-                          <input type="text" placeholder="Ingrese su comuna" required>
-                      </div>
-                      <div class="input-field">
-                        <label>Numero de casa</label>
-                        <input type="number" placeholder="Ingrese numero de domicilio" required>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
                     </div>
-                  </div>
+                </li>
+                
+            </div>
+        </div>
 
-              </div>
-                  <div class="buttons">
-                      <div class="backBtn">
-                          <i class="uil uil-navigator"></i>
-                          <span class="btnText">Atras</span>
-                      </div>
-                      
-                      <button class="sumbit">
-                          <span class="btnText">Enviar</span>
-                          <i class="uil uil-navigator"></i>
-                      </button>
-                  </div>
-              </div> 
-          </div>
-      </form>
-  </div>
+    </nav>
 
-  <script src="{% static "js/script.js" %}"></script>
-  <script src="{% static "js/login.js" %}"></script>
+    <section class="home">
+        <div class="top">
+            <div class="search-box_1">
+                <i class="bx bx-search icon"></i>
+                    <input type="text" placeholder="Buscar...">
+            </div>
+        </div>
+    <div class="dash-content">
+        <div class="overview">
+            <div class="title">
+                <i class="bx bx-user icon"></i>
+                <span class="text">Registro</span>
+            </div>
+        
+            <div class="container">          
+                <form action="#">
+                    <div class="form first">
+                        <div class="details personal">
+                            <span class="title">Datos personales</span>
+          
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Nombre completo</label>
+                                    <input type="text" placeholder="Ingrese su nombre completo" required>
+                                </div>
+          
+                                <div class="input-field">
+                                    <label>Fecha de nacimiento</label>
+                                    <input type="date" placeholder="ingrese su fecha de nacimiento" required>
+                                </div>
+          
+                                <div class="input-field">
+                                    <label>Correo</label>
+                                    <input type="text" placeholder="Ingrese su correo" required>
+                                </div>
+          
+                                <div class="input-field">
+                                    <label>Edad</label>
+                                    <input type="number" placeholder="Ingrese su edad" required>
+                                </div>
+                                <div class="input-field">
+                                  <label>Ingrese su numero de telefono</label>
+                                  <input type="text" placeholder="Ingrese numero de telefono" required>
+                              </div>
+                                <div class="input-field">
+                                    <label>Genero</label>
+                                    <select required>
+                                        <option disabled selected>Selecciones su genero</option>
+                                        <option>Hombre</option>
+                                        <option>Mujer</option>
+                                        <option>Helicoptero Apache</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+          
+                        <div class="details ID">
+                            <span class="title">Datos Adicionales para envio</span>
+          
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>RUT</label>
+                                    <input type="text" placeholder="Ingrese su rut" required>
+                                </div>
+          
+                                <div class="input-field">
+                                    <label>Ingrese otro numero de telefono</label>
+                                    <input type="text" placeholder="Ingrese otro numero de telefono">
+                                </div>
+          
+                                <div class="input-field">
+                                    <label>Direccion</label>
+                                    <input type="text" placeholder="Ingrese su direccion completa" required>
+                                </div>
+          
+                                <div class="input-field">
+                                    <label>Ingrese comentarios</label>
+                                    <input type="text" placeholder="Ingrese datos adicionales a su compra" required>
+                                </div>
+                            </div>
+                            <button class="nextBtn">
+                                <span class="btnText">Siguiente</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                        </div> 
+                    </div>
+          
+                    <div class="form second">
+                        <div class="details address">         
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Direciones adicionales</label>
+                                    <input type="text" placeholder="Ingrese datos adicionales" required>
+                                </div>
+          
+                                <div class="input-field">
+                                    <label>Region</label>
+                                    <input type="text" placeholder="Ingrese su region" required>
+                                </div>
+          
+                                <div class="input-field">
+                                    <label>Comuna</label>
+                                    <input type="text" placeholder="Ingrese su comuna" required>
+                                </div>
+                                <div class="input-field">
+                                  <label>Numero de casa</label>
+                                  <input type="number" placeholder="Ingrese numero de domicilio" required>
+                              </div>
+                            </div>
+          
+                        </div>
+                            <div class="buttons">
+                                <div class="backBtn">
+                                    <i class="uil uil-navigator"></i>
+                                    <span class="btnText">Atras</span>
+                                </div>
+          
+                                <button class="sumbit">
+                                    <span class="btnText">Enviar</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button>
+                            </div>
+                        </div> 
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+
+        
+    </Store>
+
+    <script src="{% static "js/script.js" %}"></script>
+    <script src="{% static "js/sweetalert2.all.js" %}"></script>
+    <script src="{% static "js/login.js" %}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="{% static "js/aviso-cookies.js" %}"></script>
+    <script src="{% static "js/sweet.js" %}"></script>
+
 </body>
 </html>
