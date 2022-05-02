@@ -1,0 +1,25 @@
+:root {
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #27f2ae;
+    --secondary-color: #7066e0;
+    --primary-color-light: #9ea3b6;
+    --border-color: #8c8c8d;
+    --cancel-color: #db2020;
+    --panel-color: var(--body-color);
+    --toggle-color: #DDD;
+    --black-light-color: var(--text-color);
+    --text-color: #707070;
+    --cardview-color: #707070;
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+    /* para satisfacer los espacios de las grid se utiliza webkit para dimenciones  */
+    --h1-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.75rem;
+}
