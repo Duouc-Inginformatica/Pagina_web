@@ -60,32 +60,12 @@ main.addEventListener("click", (e) => {
 // sistema para adaptar las cardview dependiendo del estado de la barra de navegacion
 toggle.addEventListener("click", () => {
     if (sidebar.classList.contains("close")) {
-        console.log("la barra de navegacion esta cerrada");
+        // console.log("la barra de navegacion esta cerrada");
         document.getElementById("gamecard").style.margin = "149px";
     } else {
         sidebar.classList.contains("close");
-        console.log("200px");
+        // console.log("200px");
         document.getElementById("gamecard").style.margin = "294px";
         // margin: 149px;
     }
 })
-
-const form = document.querySelector("form"),
-        nextBtn = form.querySelector(".nextBtn"),
-        backBtn = form.querySelector(".backBtn"),
-        allInput = form.querySelectorAll(".first input");
-
-
-
-
-nextBtn.addEventListener("click", ()=> {
-    allInput.forEach(input => {
-        if(input.value != ""){
-            form.classList.add('secActive');
-        }else{
-            form.classList.remove('secActive');
-        }
-    })
-})
-
-backBtn.addEventListener("click", () => form.classList.remove('secActive'));
