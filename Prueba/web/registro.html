@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/main.css" %}'>
+    <link rel='stylesheet' type='text/css' media='screen' href='{% static "css/form.css" %}'>
     <link rel="icon" href="{% static "images/mando.png" %}"/>
     <title>TecnoGamer |Registro</title>
     <!-- Google Tag Manager cokies -->
@@ -131,13 +132,7 @@
         </div>
     <div class="dash-content">
         <div class="overview">
-            <div class="title">
-                <i class="bx bx-user icon"></i>
-                <span class="text">Registro</span>
-            </div>
-        
-            <div class="container">          
-                <form id="basic-form" action="" method="post">
+                <form id="basic-form" action="" method="">
                     <p>
                       <label for="name">Nombre <span>(*)</span></label>
                       <input id="name" name="name">
@@ -147,12 +142,13 @@
                       <input id="age" name="age">
                     </p>
                     <p>
-                      <label for="email">Correo <span>(*)</span></label>
-                      <input id="email" name="email">
+                      <label for="gemail">Correo <span>(*)</span></label>
+                      <input id="gemail" name="gemail">
                     </p>
                     <p>
                         <label for="password">Ingrese su contraseña <span>(*)</span></label>
                         <input id="pasword" name="password">
+                        <i class="uil uil-eye-slash toggle"></i>
                       </p>
                       <p>
                         <label for="password_confirmation">Vuelva ingresar su contraseña <span>(*)</span></label>
