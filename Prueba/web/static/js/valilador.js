@@ -10,7 +10,7 @@ $(document).ready(function() {
           number: true,
           min: 18
         },
-        email: {
+        gemail: {
           required: true,
           email: true
         },
@@ -34,9 +34,9 @@ $(document).ready(function() {
               number: "Tiene que ser un numero",
               min: "Tienes que ser mayor de 18 años"
             },
-            email: {
-              email: "Tu correo no tiene un formato correcto",
-              requited: "Correo requerido"
+            gemail: {
+              gemail: "Tu correo no tiene un formato correcto",
+              requited: "Correo requerido",
             },
             password: {
               required: "Contraseña requerida",

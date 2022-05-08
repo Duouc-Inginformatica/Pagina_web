@@ -69,3 +69,12 @@ toggle.addEventListener("click", () => {
         // margin: 149px;
     }
 })
+
+// sistema para definir el modo de color del sistema
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    modeText.innerText = "Modo oscuro ";
+    localStorage.setItem('modo-oscuro', true);
+} else { 
+    modeText.innerText = "Modo claro ";
+    localStorage.setItem('modo-oscuro', false);
+}
