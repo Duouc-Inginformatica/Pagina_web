@@ -76,5 +76,5 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     localStorage.setItem('modo-oscuro', true);
 } else { 
     modeText.innerText = "Modo claro ";
-    localStorage.setItem('modo-oscuro', false);
+    localStorage.removeItem('modo-oscuro', false);
 }
