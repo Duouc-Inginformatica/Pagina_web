@@ -5,7 +5,7 @@ const body = document.querySelector('body'),
     modeSwitch = body.querySelector(".toggle-switch"),
     modeText = body.querySelector(".mode-text"),
     modehome = body.querySelector(".home"),
-    main = body.querySelector(".main"),
+    stell = body.querySelector(".stell"),
     bd = body.querySelector(".bd-grid");
 
 
@@ -48,14 +48,14 @@ modeSwitch.addEventListener("click", () => {
 })
 
 // sistema para cerrar el menu al hacer click en las cardview de la pagina
-main.addEventListener("click", (e) => {
-    if (sidebar.classList.contains("close")) {
-        console.log("la barra de navegacion esta no estaba abierta");
-    } else {
-        sidebar.classList.toggle("close");
-        console.log("Se fuerza el cierre de la barra de navegacion se hizo click en el fondo");
-    }
-})
+        stell.addEventListener("click", (e) => {
+            if (sidebar.classList.contains("close")) {
+                // console.log("la barra de navegacion esta no estaba abierta");
+            } else {
+                sidebar.classList.toggle("close");
+                // console.log("Se fuerza el cierre de la barra de navegacion se hizo click en el fondo");
+            }
+        })
 
 // sistema para adaptar las cardview dependiendo del estado de la barra de navegacion
 toggle.addEventListener("click", () => {
