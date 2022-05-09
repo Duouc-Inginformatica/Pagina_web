@@ -1,8 +1,8 @@
 function colored() {
   if (body.classList.contains("dark")) {
-    return 'Se activo el modo oscuro por detecion de sistema';
+    return 'Se activo el modo oscuro por detección de sistema';
 } else {
-    return 'se activo el modo claro por detecion de sistema';
+    return 'se activo el modo claro por detección de sistema';
 
 }
 
@@ -18,7 +18,7 @@ window.colordet = async () => {
         popup: 'colored-toast'
       },
       showConfirmButton: false,
-      timer: 1500,
+      timer: 3400,
       timerProgressBar: true
     })
     await Toast.fire({
