@@ -3,17 +3,17 @@
 }
 
 .slider {
-
     margin-top: 150px;
-    margin-left: 300px;
-    width: 600px;
+    width: 300px;
     text-align: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
+
 }
 
-.slides {
-    display: flex;
 
+.slides {
+    height: 370px;
+    display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 
@@ -45,8 +45,8 @@
 .slides>div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 600px;
-    height: 600px;
+    width: 300px;
+    height: 300px;
     margin-right: 50px;
     border-radius: 10px;
     background: #eee;
@@ -87,7 +87,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 120%;
 }
 
 .slider>a {
@@ -111,4 +111,45 @@ img {
     background: #000;
 }
 
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+    .slider>a {
+        display: none;
+    }
+}
+
+
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #74ABE2, #5563DE);
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+
+
+
+.novedades {
+    margin-top: -300px;
+    position: absolute;
+    color: blue;
+}
+
+
+
+.hoy {
+    margin-top: 600px;
+    position: absolute;
+    color: blue;
+    text-align: center;
+
+}
 
