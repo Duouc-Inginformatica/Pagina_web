@@ -32,6 +32,23 @@ body {
     transition: var(--tran-05);
 }
 
+<<<<<<< HEAD:Prueba/web/static/css/main.css
+=======
+table thead {
+    background: var(--primary-color);
+    color: var(--body-color);
+}
+
+bg-body {
+    background-color: var(--body-color);
+}
+
+img-home {
+    width: 100%;
+    height: auto;
+}
+
+>>>>>>> cb4cfaf (se agrega script para el rastreo de datos):Prueba/web/css/main.css
  ::selection {
     background-color: var(--primary-color);
     color: #fff;
