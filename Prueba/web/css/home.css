@@ -61,10 +61,6 @@
     font-size: 100px;
 }
 
-.slides>div:target {
-    /*   transform: scale(0.8); */
-}
-
 .author-info {
     background: rgba(0, 0, 0, 0.75);
     color: white;
@@ -120,27 +116,30 @@ img {
 
 
 
-html,
+
 body {
     height: 100%;
     overflow: hidden;
-}
-
-body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #74ABE2, #5563DE);
-    font-family: 'Ropa Sans', sans-serif;
+}
+html {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
 
 .novedades {
-    margin-top: -300px;
+    margin-top: -319px;
     position: absolute;
-    color: blue;
+    color: var(--primary-color);
+    margin-left: 132px;
 }
 
 
@@ -148,7 +147,7 @@ body {
 .hoy {
     margin-top: 600px;
     position: absolute;
-    color: blue;
+    color: var(--primary-color);
     text-align: center;
 
 }
