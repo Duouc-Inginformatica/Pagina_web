@@ -42,6 +42,11 @@ bg-body {
     background-color: var(--body-color);
 }
 
+body.swal2-shown > [aria-hidden="true"] {
+  transition: 0.1s filter;
+  filter: blur(10px);
+}
+
 img-home {
     width: 100%;
     height: auto;
