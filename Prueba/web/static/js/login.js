@@ -44,3 +44,13 @@ function logine() {
     })
 
 }
+
+
+function alerta2() {
+    Swal.fire({
+        title: 'Esta pagina esta en construccion, vuelva mas tarde',
+        background: [
+            statusnegro(),
+        ],
+      })
+}
