@@ -33,6 +33,15 @@ body {
     transition: var(--tran-05);
 }
 
+table thead {
+    background: var(--primary-color);
+    color: var(--body-color);
+}
+
+bg-body {
+    background-color: var(--body-color);
+}
+
 img-home {
     width: 100%;
     height: auto;
