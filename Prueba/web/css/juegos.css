@@ -138,7 +138,8 @@ article:nth-child(7) {
     margin-right: 2.5rem;
     align-items: center;
     gap: 2rem;
-    margin: 149px;
+    margin-top : 885px;
+    margin-left: 331px;
 }
 
 @media screen and (min-width: 1200px) {

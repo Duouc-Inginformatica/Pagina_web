@@ -57,18 +57,18 @@ main.addEventListener("click", (e) => {
     }
 })
 
-// sistema para adaptar las cardview dependiendo del estado de la barra de navegacion
-toggle.addEventListener("click", () => {
-    if (sidebar.classList.contains("close")) {
-        // console.log("la barra de navegacion esta cerrada");
-        document.getElementById("gamecard").style.margin = "149px";
-    } else {
-        sidebar.classList.contains("close");
-        // console.log("200px");
-        document.getElementById("gamecard").style.margin = "294px";
-        // margin: 149px;
-    }
-})
+// // sistema para adaptar las cardview dependiendo del estado de la barra de navegacion
+// toggle.addEventListener("click", () => {
+//     if (sidebar.classList.contains("close")) {
+//         // console.log("la barra de navegacion esta cerrada");
+//         document.getElementById("gamecard").style.margin = "331px";
+//     } else {
+//         sidebar.classList.contains("close");
+//         // console.log("200px");
+//         document.getElementById("gamecard").style.marginLefts = "331px";
+//         // margin: 149px;
+//     }
+// })
 
 // sistema para definir el modo de color del sistema
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
