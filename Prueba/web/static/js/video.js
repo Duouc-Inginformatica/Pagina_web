@@ -5,8 +5,9 @@ function valorant() {
     html:
       '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ey770ez6ROk" autoplay;  picture-in-picture" allowfullscreen></iframe>',
     showCloseButton: true,
-    showCancelButton: true,
+    showCancelButton: false,
     focusConfirm: false,
+    backgroud: [statusnegro()],
     confirmButtonText:
       '<i class="fa fa-thumbs-up"></i> Genia!',
     confirmButtonAriaLabel: 'Me Gusta, Genial!',
