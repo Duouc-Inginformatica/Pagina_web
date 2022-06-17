@@ -4,8 +4,15 @@ function colored() {
 } else {
     return 'se activo el modo claro por detecion de sistema';
 
+ }
 }
 
+function tipe() {
+  if (body.classList.contains("dark")) {
+    return "success";
+} else {
+    return "info";
+  }
 }
 
 
@@ -18,11 +25,11 @@ window.colordet = async () => {
         popup: 'colored-toast'
       },
       showConfirmButton: false,
-      timer: 1500,
+      timer: 2000,
       timerProgressBar: true
     })
     await Toast.fire({
-      icon: 'info',
+      icon: [tipe()],
       title: [colored()]
     })
     }

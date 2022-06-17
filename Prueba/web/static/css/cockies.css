@@ -2,7 +2,7 @@
 
 .aviso-cookies {
     display: none;
-    background: var(--border-color);
+    background: var(--sidebar-color);
     padding: 20px;
     width: calc(100% - 40px);
     max-width: 300px;
@@ -36,15 +36,16 @@
 .aviso-cookies .boton {
     width: 100%;
     border: none;
-    color: var(--dark-color);
+    color: var(--sidebar-color);
     text-align: center;
     padding: 15px 20px;
     font-weight: 700;
     cursor: pointer;
-    transition: .3s ease all;
+    transition: .6s ease all;
     border-radius: 5px;
     margin-bottom: 15px;
     font-size: 14px;
+    background-color: var(--cardview-color);
 }
 
 .aviso-cookies .boton:hover {

@@ -3,7 +3,7 @@ function valorant() {
     title: '<strong>Valorant <u>TRAILER</u></strong>',
     icon: 'info',
     html:
-      '<iframe width="560" height="315" src="{% static "https://www.youtube.com/embed/Ey770ez6ROk" autoplay;  picture-in-picture" allowfullscreen></iframe>',
+      '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ey770ez6ROk" autoplay;  picture-in-picture" allowfullscreen></iframe>',
     showCloseButton: true,
     showCancelButton: true,
     focusConfirm: false,
