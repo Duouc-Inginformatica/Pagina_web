@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -122,12 +123,52 @@
                     <input type="text" placeholder="Buscar...">
             </div>
     </section>
+
+
+    <div class="novedades">
+        <h1>Recien llegados</h1>
+    </div>
      
+    <div class="slider">
+        
+        <a href="#slide-1">1</a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+        <a href="#slide-4">4</a>
+        <a href="#slide-5">5</a>
+    
+        <div class="slides">
+            <div id="slide-1">
+                <img src="{% static "images/CallofDuty.jpeg" %}" alt="">
+            </div>
+            <div id="slide-2">
+                <img src="{% static "images/Outriders.jpg" %}" alt="">
+            </div>
+            <div id="slide-3">
+                <img src="{% static "images/Spiderman.jpg" %}" alt="">
+            </div>
+            <div id="slide-4">
+                <img src="{% static "images/Fifaps5.jpg" %}" alt="">
+            </div>
+            <div id="slide-5">
+                <img src="{% static "images/Alan.jpg" %}" alt="">  
+            </div>
+        </div>
+    </div>
+
+<div class="hoy"> 
+   <h2>Compra hoy antes de las 11:00 am y recibe tu pedido hoy mismo</h2>
+   <h5>Valido solamente para comunas dentro de la ciudad de Santiago</h5>    
+ 
+</div>  
+    
+
     <script src="{% static "js/aviso-cookies.js" %}"></script>
     <script src="{% static "js/script.js" %}"></script>
     <script src="{% static "js/sweetalert2.all.js" %}"></script>
     <script src="{% static "js/login.js" %}"></script>
     <script src="{% static "js/colored-toak.js" %}"></script>
+    
 
 </body>
 </html>
