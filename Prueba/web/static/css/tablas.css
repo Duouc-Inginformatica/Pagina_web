@@ -1,0 +1,30 @@
+#main-container{
+	margin: 10px auto;
+	width: 480px;
+}
+
+table{
+	background-color: var(--body-color);
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: var(--primary-color);
+	border-bottom: solid 5px var(--primary-color);
+	color: var(--primary-color);
+}
+
+tr:nth-child(even){
+	background-color: var(--border-color);
+}
+
+tr:hover td{
+	background-color: var(--primary-color);
+	color: white;
+}
