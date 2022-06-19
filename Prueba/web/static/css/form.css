@@ -18,7 +18,10 @@ body_form {
   }
   
   form, p {
-    margin: 20px;
+    margin: 40px;
+    margin-left: 26px;
+    margin-top: 70px;
+    display: flow-root;
   }
   
   p.note {
