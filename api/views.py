@@ -7,7 +7,7 @@ from .models import Prueba
 
 # Create your views here.
 
-class Pruebaview(View):
+class PruebaView(View):
     def get(self, request):
         return render(request, 'index.html')
 
