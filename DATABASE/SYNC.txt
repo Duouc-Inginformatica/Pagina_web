@@ -1,0 +1,4 @@
+python manage.py makemigrations
+ python manage.py migrate
+for more type:-
+python manage.py help
