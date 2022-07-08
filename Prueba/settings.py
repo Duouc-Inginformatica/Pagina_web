@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static", 'C:/Users/sebas/Documents/Pagina_web/Prueba/web/static',
+    BASE_DIR / "static", 'C:/EPW/Pagina_web/Prueba/web/static',
 ]
 
 
@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api',
+    'rest_framework',
+    'rest_usuario',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +61,7 @@ ROOT_URLCONF = 'Prueba.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/Users/sebas/Documents/Pagina_web/Prueba/web/"],
+        'DIRS': ["C:/EPW/Pagina_web/Prueba/web/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -84,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', 
         'NAME': 'Prueba',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': '11',
         'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {

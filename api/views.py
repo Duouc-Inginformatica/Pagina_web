@@ -17,6 +17,6 @@ class Pruebaview(View):
     def put(self, request):
         return render(request, 'index.html')
 
-    def delete(self, request):
+    def delete(self, request):  
         return render(request, 'index.html')
 
