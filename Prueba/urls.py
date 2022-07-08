@@ -16,4 +16,5 @@ urlpatterns = [
     path('juegos', juegos, name='juegos'),
     path('cliente', cliente, name='cliente'),
     path('registro', registro, name='registro'),
+    path('api/', include('rest_usuario.urls')),
 ]
